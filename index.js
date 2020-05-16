@@ -175,7 +175,7 @@ class Student extends Lambdasian {
     this.grade = Math.floor(Math.random() * 100) + 1;
   }
   listSubjects() {
-    return this.favSubjects.reduce((acc, curr) => (acc += curr));
+    return `Loving ${this.favSubjects.join()}!`;
   }
   PRAssignment(subject) {
     return `${this.name} has submitted a PR for ${subject}`;
